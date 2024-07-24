@@ -1,0 +1,39 @@
+/*sample of form*/
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <meta author="Ashok Bohara">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This is a normal survey form</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" required><br><br>
+      <label for="email" id="email-label">Email:</label>
+      <input type="email" id="email" placeholder="Enter your email" required><br><br>
+      <label for="number" id="number-label">Number:</label>
+      <input type="number" id="number" min="5" max="10" placeholder="Enter your number"><br><br>
+      <select id="dropdown">
+        <option value="Nepal">Nepal</option>
+        <option value="India">India</option>
+        <option value="Other">Other</option>
+      </select><br><br>
+      <fieldset>
+        <legend>Gender:</legend>
+        <input type="radio" value="Male" name="gender">Male
+        <input type="radio" value="Female" name="gender">Female
+        <input type="radio" value="Others" name="gender">Others
+      </fieldset><br>
+      <label>Subjects:</label>
+      <input type="checkbox" value="Physics">Physics
+      <input type="checkbox" value="Maths">Maths
+      <input type="checkbox" value="Chemistry">Chemistry<br><br>
+      <label for="comments">Comments:</label><br>
+      <textarea id="comments" rows="4" cols="50"></textarea><br><br>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+</html>
