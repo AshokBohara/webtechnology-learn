@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sum of Five Numbers</title>
+</head>
+<body>
+<h1>Enter Five Numbers</h1>
+<form id="numberForm">
+<input type="text" id="num1" placeholder="Enter first number"><br>
+<input type="text" id="num2" placeholder="Enter second number"><br>
+<input type="text" id="num3" placeholder="Enter third number"><br>
+<input type="text" id="num4" placeholder="Enter fourth number"><br>
+<input type="text" id="num5" placeholder="Enter fifth number"><br>
+<button type="button" onclick="calculateSum()">Calculate Sum</button>
+</form>
+<p id="result"></p>
+<p id="error"></p>
+<script>
+function calculateSum() {
+const numbers = [];
+let errorMessage = "";
+for (let i = 1; i <= 5; i++) 
+{
+const input = document.getElementById(`num${i}`).value;
+const number = parseFloat(input);
+if (isNaN(number)) {
+errorMessage = `Please enter a valid number in input ${i}.`;
+break;
+} else {
+numbers.push(number); }
+}
+if (errorMessage) {
+document.getElementById("error").textContent = errorMessage;
+document.getElementById("result").textContent = "";
+} else {
+const sum = numbers.reduce((acc, num) => acc + num, 0);
+document.getElementById("result").textContent = `The sum of the numbers is:
+${sum}`;
+document.getElementById("error").textContent = ""; }
+}
+</script>
+</body>
+</html>
