@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style11.css">
+</head>
+<body>
+    <header>
+        hello world!!
+    </header>
+    <button id="myButton">Click Me!</button>
+<p id="output"></p>
+
+<script>
+// Step 1: Select the element
+const button = document.getElementById("myButton");
+const output = document.getElementById("output");
+
+// Step 2: Define the function to be executed when the event occurs
+function handleClick() 
+{
+output.textContent = "Button was clicked!"; 
+}
+
+// Step 3: Attach the event listener to the element
+button.addEventListener("click", handleClick);
+
+</script>
+</body>
+</html>
