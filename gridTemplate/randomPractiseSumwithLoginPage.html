@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sum of five number</title>
+</head>
+<body>
+  <style>
+    body
+    {
+     background-color: aqua;
+     header{color: rgb(6, 253, 39);}
+    }
+  </style>
+  <h1>
+    Enter five number
+  </h1>
+<form id="numberform">
+  <input type ="text" id="num1" placeholder="enter first number"><br>
+  <input type="text" id="num2" placeholder="enter second number"><br>
+  <input type="text" id="num3" placeholder="enter third number"><br>
+  <input type="text" id="num4" placeholder="enter fourth number"><br>
+  <input type="text" id="num5" placeholder="enter fifth number"><br>
+  <button type="button" onclick="calculateSum()">calculateSum</button>
+  <p id="resulr"></p>
+  <p id="error"></p>
+  <script>
+    function calculateSum()
+    {
+      const number=[];
+      let errormessage="";
+      for(let i=1;i<=5;i++)
+    {
+      const input=document.getElementById('num${i}');
+      const number=parseFloat(input)
+      if(isNaN(number))
+    {
+      errormessage="please enter valid number in input ${i}";
+      break;
+    }
+    else
+    {
+      number.push(number);
+    }
+    }
+    if(errormessage)
+    {
+      document.getElementById("error").textcontent=errormessage;
+      document.getElementById("result").textContent="";
+
+    }
+    else
+    {
+     const sum=number.reduce(acc,num)=>acc+num,0;
+     document.getElementById("result").textContent='the sum of number is: ${sum}';
+     document.getElementById("error").textContent="";
+     }
+    }
+</script>
+<header>
+  hello i am student at pokhara university 
+  faculty of science and technology 
+</header>
+</form>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>loginpage</title>
+</head>
+<body>
+  <h1>Login</h1>
+<form method="post" action="login.php">
+  <label for="username">username</label><br>
+  <input type="text" id="username"><br>
+  <label for="email">email:</label><br>
+  <input type="text" id="email"><br>
+  <lable for="password">password:</lable><br>
+  <input type="text" id="password"><br><br>
+  <input type="submit" value="login">
+</form>
+</body>
+</html>
