@@ -1,0 +1,77 @@
+.accordian_content {
+display: none;
+  }
+  .accordian_title.active + .accordian_content {
+    display: block;
+  }
+  /* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Accordion container */
+  .accordian_item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px 0;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  /* Accordion title (header) */
+  .accordian_title {
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .accordian_title:hover {
+    background-color: #e0e0e0;
+    color: #000;
+  }
+  
+  .accordian_title.active {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  /* Accordion content (hidden by default) */
+  .accordian_content {
+    padding: 15px 20px;
+    font-size: 14px;
+    line-height: 1.6;
+    background-color: #fff;
+    display: none;
+    color: #555;
+    border-top: 1px solid #ddd;
+  }
+  
+  /* Active accordion content (visible) */
+  .accordian_title.active + .accordian_content {
+    display: block;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .accordian_title {
+      font-size: 14px;
+    }
+  
+    .accordian_content {
+      font-size: 13px;
+    }
+  }
+  
