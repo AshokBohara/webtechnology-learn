@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Detail Form</title>
+    <style>
+      body
+       {
+        font-family: Arial, sans-serif;
+      }
+      table
+       {
+        margin: 20px auto;
+        border-collapse: collapse;
+        width: 50%;
+      }
+      th
+       {
+        background-color: #f2f2f2;
+      }
+      td
+      {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="studentForm">
+      <table border="1">
+        <th colspan="2">Fill in the form below</th>
+        <tr>
+          <td><label for="name">Name</label></td>
+          <td><input type="text" id="name" required /></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email</label></td>
+          <td><input type="email" id="email" required /></td>
+        </tr>
+        <tr>
+          <td><label for="feedback">Feedback</label></td>
+          <td><textarea id="feedback"></textarea></td>
+        </tr>
+        <tr>
+          <td><label for="gender">Gender</label></td>
+          <td>
+            <input type="radio" name="gender" id="male" value="Male" /><label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="Female" /><label for="female">Female</label>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="subject">Subject</label></td>
+          <td>
+            <input type="checkbox" name="subject" value="Web Technology" />Web Technology<br />
+            <input type="checkbox" name="subject" value="Java" />Java<br />
+            <input type="checkbox" name="subject" value="C++" />C++
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <input type="submit" value="Submit" />
+            <input type="reset" />
+          </td>
+        </tr>
+      </table>
+    </form>
+
+    <div id="response" style="text-align: center; margin-top: 20px;"></div>
+
+
+    
+    <script>
+        
+      document.getElementById("studentForm").addEventListener("submit", function (event)
+       {
+        event.preventDefault(); // Prevent the default form submission behavior
+
+        // Get form values
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const feedback = document.getElementById("feedback").value;
+        const gender = document.querySelector('input[name="gender"]:checked')?.value || "Not specified";
+        const subjects = Array.from(document.querySelectorAll('input[name="subject"]:checked')).map((el) => el.value);
+
+        // Build the response message
+        let responseMessage = `<h3>Form Submitted Successfully!</h3>`;
+        responseMessage += `<p><strong>Name:</strong> ${name}</p>`;
+        responseMessage += `<p><strong>Email:</strong> ${email}</p>`;
+        responseMessage += `<p><strong>Feedback:</strong> ${feedback}</p>`;
+        responseMessage += `<p><strong>Gender:</strong> ${gender}</p>`;
+        responseMessage += `<p><strong>Subjects:</strong> ${subjects.length > 0 ? subjects.join(", ") : "None"
+        }
+        </p>`;
+
+        // Display the response
+        document.getElementById("response").innerHTML = responseMessage;
+      }
+      );
+    </script>
+  </body>
+</html>
