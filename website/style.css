@@ -161,7 +161,7 @@ background: #eceff3;
     justify-content: space-between;
     margin-bottom: 18px;
 }
-.sidebar-title h4{
+.right-sidebar h4{
     font-weight: 600;
     font-size: 16px;
 }
@@ -207,4 +207,31 @@ background: #1876f2;
 color: #fff;
 font-size: 10px;
 padding: 4px 0;
+}
+.sidebar-ads
+{
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 4px;
+
+}
+.online-list{
+    display: flex;
+  align-items:center;
+  margin-bottom: 20px;
+}
+.online-list .online img{
+    width: 40px;
+    border-radius: 50%;
+}
+.online-list .online{
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+
+}
+.online-list .online::after{
+    top:unset;
+    bottom: 0;
+    
 }
