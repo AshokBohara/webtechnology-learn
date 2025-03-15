@@ -4,10 +4,12 @@
     font-family: 'poppins', sans-serif;
     box-sizing: border-box;
 }
-body{
+body
+{
     background-color: #efefef;
 }
-nav{
+nav
+{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -27,7 +29,8 @@ nav{
     display: flex;
     align-items: center;;
 }
-.nav-left ul li{
+.nav-left ul li
+{
     list-style: none;
     display: inline-block;;
 }
@@ -36,7 +39,8 @@ nav{
     width: 28px;
     margin: 0 6px;
 }
-.nav-user-icon img{
+.nav-user-icon img
+{
     width: 40px;
     border-radius: 50%;
     cursor: pointer;
@@ -135,7 +139,8 @@ background: #eceff3;
 {
     color: #1876f2;
 }
-.imp-links{
+.imp-links
+{
     border-bottom: 1px solid black;
 }
 .shortcut-links a img
@@ -155,13 +160,15 @@ background: #eceff3;
     color: #030000;
     font-weight: 500;
 }
-.sidebar-title{
+.sidebar-title
+{
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 18px;
 }
-.right-sidebar h4{
+.right-sidebar h4
+{
     font-weight: 600;
     font-size: 16px;
 }
@@ -177,7 +184,8 @@ background: #eceff3;
     font-size: 14px;
     margin-bottom: 20px;
 }
-.left-event {
+.left-event 
+{
     border-radius: 10px;
     height: 65px;
     width: 75px;
@@ -189,16 +197,19 @@ background: #eceff3;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     
 }
-.event p{
+.event p
+{
     font-size: 11px;
 }
-.event a {
+.event a 
+{
     font-size:11px;
     text-decoration: none;
     color: #1876f2;
 
 }
-.left-event span{
+.left-event span
+{
 position: absolute;
 bottom: 0;
 left: 0;
@@ -279,7 +290,8 @@ padding: 4px 0;
     background-image: url(image/status-2.png);
 
 }
-.story3{
+.story3
+{
     background-image: url(image/status-3.png);
 
 }
