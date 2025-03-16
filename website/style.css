@@ -226,22 +226,26 @@ padding: 4px 0;
     border-radius: 4px;
 
 }
-.online-list{
+.online-list
+{
     display: flex;
   align-items:center;
   margin-bottom: 20px;
 }
-.online-list .online img{
+.online-list .online img
+{
     width: 40px;
     border-radius: 50%;
 }
-.online-list .online{
+.online-list .online
+{
     width: 40px;
     border-radius: 50%;
     margin-right: 15px;
 
 }
-.online-list .online::after{
+.online-list .online::after
+{
     top:unset;
     bottom: 0;
     
@@ -253,7 +257,8 @@ padding: 4px 0;
     margin-bottom: 20px;
 
 }
-.story{
+.story
+{
     flex-basis: 18%;
     padding-top: 32%;
     position: relative;
@@ -262,7 +267,8 @@ padding: 4px 0;
     background-size: cover;
     border-radius: 10px;
 }
-.story img{
+.story img
+{
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -271,22 +277,26 @@ padding: 4px 0;
     left: 10px;
     border: 2px solid #1876f2;
 }
-.story p{
+.story p
+{
     position: absolute;
     bottom: 10px;
     left: 10px;
     color: #fff;
     font-size: 12px;
 }
-.main-content .story-gallery .story p {
+.main-content .story-gallery .story p
+{
     color: black;
     font-size: 16px; /* Adjust the size as needed */
 }
-.story1{
+.story1
+{
     background-image: url(image/status-1.png);
 
 }
-.story2{
+.story2
+{
     background-image: url(image/status-2.png);
 
 }
@@ -295,15 +305,18 @@ padding: 4px 0;
     background-image: url(image/status-3.png);
 
 }
-.story4{
+.story4
+{
     background-image: url(image/status-4.png);
 
 }
-.story5{
+.story5
+{
     background-image: url(image/status-5.png);
 
 }
-.story.story1 img{
+.story.story1 img
+{
     top: unset;
     left: 50%;
     bottom: 10px;
