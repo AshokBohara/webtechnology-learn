@@ -290,27 +290,33 @@ padding: 4px 0;
     color:white;
     font-size: 16px;
 }
-.story1{
+.story1
+{
     background-image: url(image/status-1.png);
 
 }
-.story2{
+.story2
+{
     background-image: url(image/status-2.png);
 
 }
-.story3{
+.story3
+{
     background-image: url(image/status-3.png);
 
 }
-.story4{
+.story4
+{
     background-image: url(image/status-4.png);
 
 }
-.story5{
+.story5
+{
     background-image: url(image/status-5.png);
 
 }
-.story.story1 img{
+.story.story1 img
+{
     top: unset;
     left: 50%;
     bottom: 10px;
@@ -319,35 +325,43 @@ padding: 4px 0;
     width: 35px;
 
 }
-.write-post-container{
+.write-post-container
+{
     width: 100%;
     background: #fff;
     border-radius: 6px;
     padding: 20px;
     color:#626262;
 }
-.user-profile{
+.user-profile
+{
     display: flex;
     align-items: center;
 }
-.user-profile img{
+.user-profile img
+{
     width: 45px;
     border-radius: 50%;
     margin-right: 10px;
 }
-.user-profile p{
+.user-profile p
+{
     font-weight: 600;
     font-weght: 500;
     color: #626262;
 }
-.user-profile small{
+.user-profile small
+{
     font-size: 12px;
 }
-.post-input-container{
+.post-input-container
+{
     padding-left: 55px;
     margin-top: 20px;
 }
-.post-input-container textarea{
+.post-input-container textarea
+
+{
     width: 100%;
     border: 0;
     outline: 0;
