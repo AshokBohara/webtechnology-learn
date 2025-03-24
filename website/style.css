@@ -347,6 +347,7 @@ padding: 4px 0;
 .user-profile p
 {
     font-weight:500;
+    font-weight: 500;
     color: #626262;
 }
 .user-profile small
@@ -368,6 +369,7 @@ padding: 4px 0;
     background: transparent;
     resize: none;
 }
+<<<<<<< HEAD
 .add-post-links
 {
     display: flex;
