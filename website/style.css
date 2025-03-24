@@ -346,8 +346,7 @@ padding: 4px 0;
 }
 .user-profile p
 {
-    font-weight: 600;
-    font-weght: 500;
+    font-weight:500;
     color: #626262;
 }
 .user-profile small
@@ -368,4 +367,54 @@ padding: 4px 0;
     border-bottom: 1px solid #ccc;
     background: transparent;
     resize: none;
+}
+.add-post-links
+{
+    display: flex;
+    margin-top: 10px;
+}
+.add-post-links a
+{
+    text-decoration: none;
+    color: #626262;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+font-size: 13px;
+}
+.add-post-links a img
+{
+    width: 20px;
+    margin-right: 10px;
+}
+.post-container
+{
+    width: 100%;
+    background: #fff;
+    border-radius: 6px;
+    padding: 20px;
+    color: #626262;
+    margin: 20px 0;
+}
+.user-profile span
+{
+    font-size: 13px;
+    color: #9a9a9a;
+}
+.post-text
+{
+    color: #9a9a9a;
+    margin: 15px 0;
+    font-size:15px;
+}
+.post-text span
+{
+    color: #626262;
+font-weight: 500;
+
+}
+.post-text a
+{
+    text-decoration: none;
+    color: #1876f2;
 }
