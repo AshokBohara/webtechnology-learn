@@ -95,26 +95,26 @@ nav
 {
     display: flex;
     justify-content: space-between;
-  padding: 13px 5%;
+    padding: 13px 5%;
 }
 .left-sidebar
 {
 background: #eceff3;
-   flex-basis: 25%;
-   position: sticky;
-   top: 70px;
-   align-self: flex-start;
+    flex-basis: 25%;
+    position: sticky;
+    top: 70px;
+    align-self: flex-start;
 }
 .right-sidebar
 {
-   background: #fff;
-   flex-basis: 25%;
-   position: sticky;
-   top: 70px;
-   align-self: flex-start;
-   padding: 20px;
-   border-radius: 4px;
-   color: #626262;
+    background: #fff;
+    flex-basis: 25%;
+    position: sticky;
+    top: 70px;
+    align-self: flex-start;
+    padding: 20px;
+    border-radius: 4px;
+    color: #626262;
 
 }
 .main-content
@@ -369,7 +369,6 @@ padding: 4px 0;
     background: transparent;
     resize: none;
 }
-<<<<<<< HEAD
 .add-post-links
 {
     display: flex;
@@ -388,6 +387,7 @@ font-size: 13px;
 {
     width: 20px;
     margin-right: 10px;
+    
 }
 .post-container
 {
