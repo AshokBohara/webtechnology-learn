@@ -1,4 +1,3 @@
-//finding the sum of five number using html and javascript language.
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,23 +7,22 @@
 <h1>Enter Five Numbers</h1>
 <form id="numberForm">
 <input type="text" id="num1" placeholder="Enter first number"><br>
-  
+
 <input type="text" id="num2" placeholder="Enter second number"><br>
-  
+
 <input type="text" id="num3" placeholder="Enter third number"><br>
-  
+
 <input type="text" id="num4" placeholder="Enter fourth number"><br>
-  
+
 <input type="text" id="num5" placeholder="Enter fifth number"><br>
-  
+
 <button type="button" onclick="calculateSum()">Calculate Sum</button>
-  
+
 </form>
-  
 <p id="result"></p>
 <p id="error"></p>
 
-  
+
 <script>
 function calculateSum() 
 {
@@ -41,7 +39,8 @@ break;
 } 
 else 
 {
-numbers.push(number); }
+numbers.push(number); 
+}
 }
 if (errorMessage) 
 {
@@ -54,7 +53,9 @@ document.getElementById("result").textContent = `The sum of the numbers is:
 ${sum}`;
 document.getElementById("error").textContent = ""; 
 }
+
 }
+
 </script>
 </body>
 </html>
