@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feedback Form</title>
+</head>
+<body>
+<h2>Feedback Form</h2>
+
+<form action="submit.php" method="post">
+
+<label for ="name">name:</label><br>
+
+<input type="text" id="name"name="name"required><br></br>
+
+<lable for="email"></lable>email:</label><br>
+
+<input type="text" id="email" email="email"><br><br>
+
+<label for="Feedback">Feedback:</label><br>
+
+<textarea id="Feedback" name="Feedback"  rows="4" cols="50"></textarea><br><br>
+
+<label>gender:</label><br>
+
+<input type="radio" id="male" name="gender" value="male" required><br>
+
+<label for="male">male:</label>
+
+<input type="radio" id="female" name="gender" value="female" required>
+
+<label for="female">female:</label>
+
+<label>Subjects of Interest:</label><br>
+
+<input type="checkbox" id="java" name="subjects []" value="java">
+
+<label for="java">Java</label><br>
+
+<input type="checkbox" id="cop" name="subjects []" value="cpp">
+
+<label for="cpp">C++</label><br><br>
+
+<input type="submit" value="Submit">
+
+<input type="reset" value="Reset">
+
+</form>
+</body>
+</html>
+</form>
