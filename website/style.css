@@ -747,7 +747,7 @@ font-weight: 500;
     border-radius: 4px;
     margin-bottom: 10px;
     cursor: pointer;
-   padding-bottom: 20px;
+    padding-bottom: 20px;
 }
 .friends-box div{
     position: relative;
@@ -770,7 +770,7 @@ font-weight: 500;
         flex-wrap: wrap;
     }
     .search-box{
-       display: none;
+    display: none;
     }
     .logo{
         
@@ -793,5 +793,167 @@ font-weight: 500;
     .main-content{
         flex-basis: 100%;
     }
+    .container{
+        flex-wrap: wrap;
+    }
+    .left-sidebar{
+        flex-basis: 100%;
+        position: static;
+        margin-bottom: 20px;
+    }
+    .right-sidebar{
+        flex-basis: 100%;
+        position: static;
+    }
+    .main-content{
+        flex-basis: 100%;
+    }
+    .profile-container{
+        padding: 20px 5%;
+    }
+    .profile-details{
+        flex-wrap: wrap;
+    }
+    .pd-row{
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    .pd-image{
+        width: 80px;
+    }
+    .pd-row div h3{
+        font-size: 20px;
+    }
+    .pd-row div p{
+        font-size: 12px;
+    }
+    .pd-row div img{
+        width: 20px;
+    }
+    .pd-right button {
+        padding: 4px 8px;
+    }
+    .pd-right button img
+    {
+        height: 12px;
+        margin-right: 5px;
+    }
+    .pd-right a{
+        padding: 8px;
+    }
+    .pd-right a img
+    {
+        width: 15px;
+    }
+    .profile-info{
+        flex-wrap: wrap;
+    }
+    .info-col{
+        flex-basis: 100%;
+    }
+    .post-col{
+        flex-basis: 100%;
+    }
+    .profile-intro{
+        margin-bottom: 10px;
+    }
+    .profile-intro h3{
+        font-size: 20px;
+    }
+    .intro-text{
+        font-size: 14px;
+    }
+    .intro-text img {
+        width: 12px;
+    }
+    .profile-intro ul li {
+        font-size: 14px;
+    }
+    .profile-intro ul li img {
+        width: 20px;
+    }
+    .title-box a{
+        font-size: 12px;
+    }
+    .photo-box{
+        grid-template-columns: repeat(2, auto);
+    }
+    .photo-box div img{
+        width: 100%;
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+    .friends-box{
+        grid-template-columns: repeat(2, auto);
+    }
+    .friends-box div img{
+        width: 100%;
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+    .friends-box p{
+        font-size: 12px;
+    }
+    .friends-box div{
+        position: relative;
+    }
+    .friends-box p{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-size: 12px;
+    }
+    .friends-box div img{
+        width: 100%;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+    .friends-box div{
+        position: relative;
+    }
+    .friends-box p{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .friends-box p{
+        font-size: 12px;
+    }
+    .friends-box div img{
+        width: 100%;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+    .friends-box div{
+        position: relative;
+    }
+    .friends-box p{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .friends-box p{
+        font-size: 12px;
+    }
+    .friends-box div img{
+        width: 100%;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+    .friends-box div{
+        position: relative;
+    }
+    .friends-box p{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    .friends-box p{
+        font-size: 12px;
+    }
+
 }
-/* ... yt statrt from 9:00 */
