@@ -52,26 +52,27 @@ const data = [
   (
     (currentItem) =>
       {
-    currentItem.addEventListener("click", (event) =>
+      currentItem.addEventListener
+      ("click", (event) =>
       {
-      console.log("come here");
-      if (currentItem.classList.contains("active"))
-        {
-        console.log(``);
-        currentItem.classList.remove("active");
-      }
-      else
-      {
-        let getAlreadyAddedActiveClass = document.querySelectorAll(".active");
-        getAlreadyAddedActiveClass.forEach((currentActiveItem) =>
+        console.log("come here");
+        if (currentItem.classList.contains("active"))
           {
-          currentActiveItem.classList.remove("active");
+          console.log(``);
+          currentItem.classList.remove("active");
         }
+        else
+        {
+          let getAlreadyAddedActiveClass = document.querySelectorAll(".active");
+          getAlreadyAddedActiveClass.forEach((currentActiveItem) =>
+            {
+            currentActiveItem.classList.remove("active");
+          }
+        );
+          currentItem.classList.add("active");
+        }
+      }
       );
-        currentItem.classList.add("active");
   }
-  }
-  );
-  }
-  );
+);
   
