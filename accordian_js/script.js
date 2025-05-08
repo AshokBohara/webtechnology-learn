@@ -37,10 +37,10 @@ const data = [
     accordionWrapper.innerHTML = data
       .map(
         (dataItem) => `
-         <div class="accordian_item">
+        <div class="accordian_item">
             <div class="accordian_title">${dataItem.title}</div>
             <div class="accordian_content">${dataItem.content}</div>
-         </div>
+        </div>
       `
       )
       .join("");
@@ -50,27 +50,27 @@ const data = [
   const getAccordianTitle = document.querySelectorAll(".accordian_title");
   getAccordianTitle.forEach
   (
-    (currentItem) => 
+    (currentItem) =>
       {
-    currentItem.addEventListener("click", (event) => 
+    currentItem.addEventListener("click", (event) =>
       {
       console.log("come here");
-      if (currentItem.classList.contains("active")) 
+      if (currentItem.classList.contains("active"))
         {
         console.log(``);
         currentItem.classList.remove("active");
       }
-       else 
+      else
       {
         let getAlreadyAddedActiveClass = document.querySelectorAll(".active");
-        getAlreadyAddedActiveClass.forEach((currentActiveItem) => 
+        getAlreadyAddedActiveClass.forEach((currentActiveItem) =>
           {
           currentActiveItem.classList.remove("active");
         }
       );
         currentItem.classList.add("active");
-      }
-    }
+  }
+  }
   );
   }
   );
