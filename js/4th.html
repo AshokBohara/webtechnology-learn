@@ -4,30 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <h1>javascript For Beginner</h1>
-    <style>body{
+    <style>
+        body{
+        background-color: blueviolet;
+        }
+        body button:hover {
         background-color: rgb(13, 241, 13);
 
     }
+    body p:hover {
+background-color: seagreen;
+    }
     body button {
-        background-color: lightseagreen;
+        background-color: rgb(245, 52, 18);
         color: white;
         font-size: 20px;
         padding: 10px;
         border-radius: 5px;
     }
     head {
-        
+
         background-color: rgb(17, 17, 17);
     }
     </style>
     <script>
+        // alert("hello ashok"); this is a alert box output is shown in the notification bar from the browser at the top of the page.
+        window.alert("hello ashok");
+
+
             function myfunction() {
             document.getElementById("demo").innerHTML = " <h1> A paragraph 1 </h1>"
             
             document.getElementById('hello').innerHTML='<h2>  hello i am ashok and here to learn javascript <h2>'
         }
 
+      //direct output in the document .
         document.write(200+200);
+
+        //adding two strings
         let str1=" ashok";
         let str2="bohara";
         let result=str1+" " +str2;
@@ -41,6 +55,9 @@
     
         <button type="button" onclick="myfunction()">hello click here to know abaout more knowledge</button>
     <p id="demo"></p>
+    <!-- this below button give the answer in new window when we click the button and
+    the function document.write("..") works -->
     <button type="button" onclick="document.write(5+11)">click me to find answer</button>
+    <p>hello i am bohara with jesry no. 7 </p>
 </body>
 </html>
