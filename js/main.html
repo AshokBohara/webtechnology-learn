@@ -1,0 +1,70 @@
+<!-- learning phase of javascript under html file -->
+<!DOCTYPE html>
+<html>
+<body>
+<h1>hello javascript this is learning phase of JS</h1>
+
+<p>JavaScript is the programming language of the Web.</p>
+<p>JavaScript is easy to learn.</p>
+<p>JavaScript is a versatile language.</p>
+<p>JavaScript is a client-side scripting language.</p>
+<h2>JavaScript Statements</h2>
+<p>A <b>JavaScript program</b> is a list of <b>statements</b> to be executed by a computer.</p>
+<p id="demo"></p>
+<p id="hero"></p>
+<P class="HANDSOME" ></P>
+<script>
+let x, y, z;
+x = 5;
+y = 6;
+z = x + y;
+let hero = "Ashok";
+document.getElementById("hero").innerHTML = "My favorite superhero is " + hero + ".";
+document.getElementById("demo").innerHTML =
+  "The value of x is " + x + "<br>" +
+  "The value of y is " + y + "<br>" +
+  "The value of z is " + z + ".";
+  let AB="my father & Brother❤️(❁´◡`❁)";
+  document.getElementsByClassName('HANDSOME')[0].innerHTML = "My favorite superhero is " + AB + ".";
+  
+</script>
+<h2>JavaScript Statements</h2>
+
+<p>JavaScript statements are separated by semicolons.</p>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<button type="button" onclick="myfunction()">click me</button>
+
+<script>
+let a, b, c,d;
+a = 5;
+b = 6;
+c = a + b;
+d=a+b+c;
+document.getElementById("demo1").innerHTML = c+d ;
+function myfunction()
+{
+  document.getElementById("demo2").innerHTML = "hello ashok";
+  document.getElementById("demo3").innerHTML = "how are you ?";
+  document.getElementById("demo3").style.color = "red";//this is used to change the color of the text in demo3 .
+  document.getElementById("demo2").style.color = "blue";//this is used to change the color of the text in demo3 .
+
+}
+
+</script>
+<!--
+var->   	  Declares a variable
+let->   	  Declares a block variable
+const->	    Declares a block constant
+if->	      Marks a block of statements to be executed on a condition
+switch->	  Marks a block of statements to be executed in different cases
+for->	      Marks a block of statements to be executed in a loop
+function->	Declares a function
+return->	  Exits a function
+try->	      Implements error handling to a block of statements
+-->
+</body>
+</body>
+</html>
