@@ -27,12 +27,3 @@ function add(a, b)
 return a + b;
 }
 console.log(add(a, b))
-
-
-
-
-
-// hello hello this is a test MessageChannel...
-
-// my name is ashok bohara and this is a test message to check if my wakatime is working or Notification,
- //api key seems to be broken, this is not so CSSMatrixComponent, the subtle error is just the methods
