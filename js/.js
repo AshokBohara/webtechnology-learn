@@ -1,3 +1,4 @@
+//javascript file.
 //learning javascript
 // 1. Variables
 var ashok = {
