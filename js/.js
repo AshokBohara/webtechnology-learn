@@ -7,7 +7,6 @@ var ashok = {
         console.log("Hello, my name is " + this.name + " and I am " + this.age + " years old.");
     }
 };
-
 var bohara =
 {
     name: "bohara",
@@ -17,7 +16,6 @@ var bohara =
         console.log("Hello, my name is " + this.name+ " and I am " + this.age + " years old.");
     }
 };
-
 ashok.greet();
 bohara.greet();
 let a= 10;
@@ -37,3 +35,14 @@ function multiply(a, b)
 return a * b;
 }
 console.log(multiply(a, b))
+
+function divide(a, b)
+{
+if (b === 0)
+    {
+    console.log("Error: Division by zero is not allowed.");
+    return undefined;
+}
+return a / b;
+}
+console.log(divide(a, b))
