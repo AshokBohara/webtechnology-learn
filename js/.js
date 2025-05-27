@@ -36,6 +36,7 @@ return a * b;
 }
 console.log(multiply(a, b))
 
+
 function divide(a, b)
 {
 if (b === 0)
