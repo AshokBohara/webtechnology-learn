@@ -1,4 +1,4 @@
-//learning javascript
+javascript 
 // 1. Variables
 var ashok = {
     name: "Ashok",
