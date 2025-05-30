@@ -47,3 +47,14 @@ if (b === 0)
 return a / b;
 }
 console.log(divide(a, b))
+
+
+function modulus(a, b)
+{
+if (b === 0)
+    {
+    console.log("Error: Division by zero is not allowed.");
+    return undefined;
+}
+return a % b;
+}
