@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-javascript
-=======
->>>>>>> 37130a561bde13e0544bd3d43bf8a687b57827bf
 // 1. Variables
 var ashok = {
     name: "Ashok",
