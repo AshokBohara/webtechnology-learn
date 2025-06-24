@@ -1,28 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>javascript</title>
-
-    <style>
-        body
-        {
-            background-color: #2b1528;
-        text-align: center;
-        color:rgb(8, 231, 19)
-        }
-        body
-        {
-            text-transform: capitalize;
-        animation:1s;
-        animation-play-state: running;
-        }
-    </style>
+  <meta charset="UTF-8"
+  <title>Letter Animation Example</title>
+  <style>
+    body
+    {
+        background-color:rgb(10, 236, 29) ;
+        align-items: center;
+        align-content: center;
+    }
+    .letter
+    {
+      opacity: 0;
+      display: inline-block;
+      transition: opacity 0.5s, transform 0.5s;
+      transform: translateY(20px);
+    }
+    .letter.visible
+    {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
 </head>
 <body>
-    <h1>javascript</h1>
-    <h3>learning javascript</h3>
-    <script src="index2.js"></script>
+  <div id="animated-text">JAVASCRIPT
+    <br>
+    <h1>we have to learn js</h1>
+  </div>
+ <script src="index2.js"></script>
+  
 </body>
 </html>
