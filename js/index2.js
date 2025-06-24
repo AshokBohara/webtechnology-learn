@@ -3,7 +3,8 @@ let Name ='Ashok';
 console.log(Name);
 
 //object in javascript
-let person = {
+let person =
+{
 name: 'Ashok',
 age:20
 };
@@ -17,8 +18,6 @@ function Agreet() {
     console.log('hello world');
 }
 Agreet();
-
-
 
 //function
 function greet(name, lastName)
@@ -36,3 +35,19 @@ function square(number)
 }
 console.log(square(12));
 
+
+
+    const text = document.getElementById('animated-text');
+    const str = text.textContent;
+    text.textContent = '';
+
+    [...str].forEach((char, i) => {
+      const span = document.createElement('span');
+      span.textContent = char;
+      span.className = 'letter';
+      text.appendChild(span);
+      setTimeout(() => {
+        span.classList.add('visible');
+      }, i * 100);
+    });
+    
